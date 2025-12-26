@@ -1,0 +1,911 @@
+{
+  "Person": {
+    "description": "Individuals who play economic, financial, or managerial roles, such as executives, investors, or economists.",
+    "attributes": [
+      "name",
+      "nickname",
+      "date_of_birth",
+      "date_of_death",
+      "nationality",
+      "job_title",
+      "education_level",
+      "years_of_experience",
+      "net_worth",
+      "email",
+      "specialization"
+    ],
+    "outgoing_relations": {
+      "owns_stake_in": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Company",
+          "Financial_Instrument",
+          "Financial_Concept"
+        ],
+        "occurrence_count": 7,
+        "attributes": ["ownership_percentage", "paid_amount"]
+      },
+      "attends": {
+        "cardinality": "m:n",
+        "target_types": ["Organization"],
+        "occurrence_count": 3
+      },
+      "related_to": {
+        "cardinality": "m:n",
+        "target_types": ["Person"],
+        "occurrence_count": 9,
+        "attributes": ["description", "relationship_type"]
+      },
+      "owns": {
+        "cardinality": "1:n",
+        "target_types": [
+          "Company",
+          "Facility",
+          "Product",
+          "Financial_Instrument",
+          "Financial_Concept"
+        ],
+        "occurrence_count": 3
+      },
+      "member_of": {
+        "cardinality": "m:n",
+        "target_types": ["Organization", "Institution"],
+        "occurrence_count": 1
+      },
+      "has_legal_issues_with": {
+        "cardinality": "m:n",
+        "target_types": ["Person", "Company", "Institution", "Organization"],
+        "occurrence_count": 9,
+        "attributes": ["description"]
+      },
+      "invests_in": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Company",
+          "Country",
+          "City",
+          "Sector",
+          "Financial_Instrument"
+        ],
+        "occurrence_count": 2,
+        "attributes": [
+          "investment_amount",
+          "investment_date",
+          "investment_details",
+          "shares_purchased"
+        ]
+      }
+    }
+  },
+  "Company": {
+    "description": "Commercial organizations that conduct business activities, including private companies, banks, and corporations.",
+    "attributes": [
+      "name",
+      "trade_name",
+      "ticker_symbol",
+      "category",
+      "founding_date",
+      "ownership_type",
+      "revenue",
+      "profit",
+      "market_cap",
+      "employee_count",
+      "website",
+      "business_model",
+      "company_stage",
+      "public_private_status"
+    ],
+    "outgoing_relations": {
+      "employs": {
+        "cardinality": "1:n",
+        "target_types": ["Person"],
+        "occurrence_count": 49,
+        "attributes": ["role", "start_date", "end_date", "reason_for_leaving"]
+      },
+      "founds": {
+        "cardinality": "1:n",
+        "target_types": ["Organization"],
+        "occurrence_count": 1
+      },
+      "has_commitment": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Concept"],
+        "occurrence_count": 3
+      },
+      "negotiates_with": {
+        "cardinality": "m:n",
+        "target_types": ["Company"],
+        "occurrence_count": 3,
+        "attributes": ["purpose", "status", "subject_matter", "source_type"]
+      },
+      "subsidiary_of": {
+        "cardinality": "n:1",
+        "target_types": ["Company"],
+        "occurrence_count": 3
+      },
+      "constituent_of": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Index"],
+        "occurrence_count": 1
+      },
+      "headquartered_in": {
+        "cardinality": "n:1",
+        "target_types": ["City", "Country", "Location"],
+        "occurrence_count": 24
+      },
+      "acquired": {
+        "cardinality": "1:n",
+        "target_types": ["Company"],
+        "occurrence_count": 4,
+        "attributes": ["description", "time", "amount", "currency"]
+      },
+      "operates_in": {
+        "cardinality": "m:n",
+        "target_types": ["Sector", "Location", "Country", "City"],
+        "occurrence_count": 32,
+        "attributes": [
+          "description",
+          "operation_type",
+          "start_date",
+          "end_date"
+        ]
+      },
+      "operates_facility": {
+        "cardinality": "1:n",
+        "target_types": ["Facility"],
+        "occurrence_count": 15
+      },
+      "publishes": {
+        "cardinality": "m:n",
+        "target_types": ["Country", "Company", "Financial_Concept"],
+        "occurrence_count": 10
+      },
+      "assigns_rating_to": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Country", "Financial_Instrument"],
+        "occurrence_count": null
+      },
+      "listed_on": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Market"],
+        "occurrence_count": 4,
+        "attributes": ["ticker_symbol"]
+      },
+      "produces": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 15
+      },
+      "has_project": {
+        "cardinality": "m:n",
+        "target_types": ["Product", "Facility", "Financial_Concept"],
+        "occurrence_count": 14,
+        "attributes": [
+          "project_type",
+          "amount",
+          "date_announced",
+          "completion_target",
+          "expected_jobs",
+          "scope"
+        ]
+      },
+      "provides_services_to": {
+        "cardinality": "m:n",
+        "target_types": ["Institution", "Organization", "Company"],
+        "occurrence_count": 1,
+        "attributes": ["service_type"]
+      },
+      "founded_by": {
+        "cardinality": "m:n",
+        "target_types": ["Person"],
+        "occurrence_count": 9
+      },
+      "announces": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Concept", "Institution"],
+        "occurrence_count": 13,
+        "attributes": ["description", "announcement_date", "announcement_type"]
+      },
+      "uses_currency": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Instrument"],
+        "occurrence_count": 2
+      },
+      "partners_with": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Organization", "Institution"],
+        "occurrence_count": 10,
+        "attributes": ["partnership_details", "partnership_type"]
+      },
+      "offers": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 19
+      },
+      "owns_stake_in": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Financial_Instrument"],
+        "occurrence_count": 13,
+        "attributes": ["ownership_percentage", "paid_amount"]
+      },
+      "owns": {
+        "cardinality": "1:n",
+        "target_types": ["Product", "Facility", "Financial_Instrument"],
+        "occurrence_count": 3,
+        "attributes": ["amount"]
+      },
+      "controls": {
+        "cardinality": "1:n",
+        "target_types": ["Company"],
+        "occurrence_count": 4
+      },
+      "investment_arm_of": {
+        "cardinality": "m:n",
+        "target_types": ["Company"],
+        "occurrence_count": 1,
+        "attributes": ["investment_arm_category"]
+      },
+      "sells": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Product",
+          "Company",
+          "Facility",
+          "Financial_Instrument",
+          "Financial_Concept"
+        ],
+        "occurrence_count": 1,
+        "attributes": ["selling_price", "amount"]
+      },
+      "owns_brand": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 6
+      },
+      "invests_in": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Company",
+          "Country",
+          "City",
+          "Sector",
+          "Facility",
+          "Financial_Instrument"
+        ],
+        "occurrence_count": 2,
+        "attributes": [
+          "investment_amount",
+          "investment_date",
+          "investment_details",
+          "shares_purchased"
+        ]
+      },
+      "executes": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Concept", "Facility", "Product"],
+        "occurrence_count": 2,
+        "attributes": [
+          "execution_period",
+          "execution_details",
+          "contract_value",
+          "currency"
+        ]
+      },
+      "supports": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Instrument"],
+        "occurrence_count": 2
+      },
+      "joint_venture_with": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Organization", "Institution"],
+        "occurrence_count": 1
+      },
+      "issues": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Instrument", "Product"],
+        "occurrence_count": 5,
+        "attributes": ["description"]
+      },
+      "follows": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Concept"],
+        "occurrence_count": 1
+      },
+      "spun_off_from": {
+        "cardinality": "n:1",
+        "target_types": ["Company"],
+        "occurrence_count": 2
+      },
+      "borrows_from": {
+        "cardinality": "m:n",
+        "target_types": ["Institution", "Company"],
+        "occurrence_count": 1
+      },
+      "transfers_to": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Organization", "Institution"],
+        "occurrence_count": 3,
+        "attributes": ["transfer_amount", "portfolio_nominal_value"]
+      },
+      "competes_with": {
+        "cardinality": "m:n",
+        "target_types": ["Company"],
+        "occurrence_count": 3
+      },
+      "has_legal_issues_with": {
+        "cardinality": "m:n",
+        "target_types": ["Person", "Company", "Institution", "Organization"],
+        "occurrence_count": null,
+        "attributes": ["description"]
+      }
+    }
+  },
+  "Institution": {
+    "description": "Official public or regulatory bodies that oversee, regulate, or administer financial or economic activities, including ministries, central banks, and authorities.",
+    "attributes": [
+      "name",
+      "acronym",
+      "institution_type",
+      "establishment_date",
+      "jurisdiction",
+      "regulatory_scope",
+      "mandate",
+      "governance_structure",
+      "budget",
+      "staff_count",
+      "legal_authority"
+    ],
+    "outgoing_relations": {
+      "publishes": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Concept"],
+        "occurrence_count": 17
+      },
+      "assigns_rating_to": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Country", "Financial_Instrument"],
+        "occurrence_count": null
+      },
+      "employs": {
+        "cardinality": "1:n",
+        "target_types": ["Person"],
+        "occurrence_count": 40,
+        "attributes": ["role", "start_date", "end_date", "reason_for_leaving"]
+      },
+      "provides": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 3
+      },
+      "investigated": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Person"],
+        "occurrence_count": 18
+      },
+      "invests_in": {
+        "cardinality": "m:n",
+        "target_types": ["Company"],
+        "occurrence_count": 1,
+        "attributes": [
+          "investment_amount",
+          "investment_date",
+          "investment_details",
+          "shares_purchased"
+        ]
+      },
+      "fined": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Person"],
+        "occurrence_count": 7,
+        "attributes": ["fine_reason", "fine_amount", "fine_date"]
+      },
+      "regulates": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Company",
+          "Financial_Market",
+          "Financial_Instrument",
+          "Sector",
+          "Financial_Concept"
+        ],
+        "occurrence_count": 4,
+        "attributes": ["description", "requirements"]
+      },
+      "appoints_trustee": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Organization"],
+        "occurrence_count": 2
+      },
+      "subsidiary_of": {
+        "cardinality": "n:1",
+        "target_types": ["Institution"],
+        "occurrence_count": 1
+      },
+      "approved": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Financial_Instrument", "Product"],
+        "occurrence_count": 5,
+        "attributes": ["description"]
+      },
+      "headquartered_in": {
+        "cardinality": "n:1",
+        "target_types": ["City", "Country"],
+        "occurrence_count": 2
+      },
+      "partners_with": {
+        "cardinality": "m:n",
+        "target_types": ["Institution", "Organization", "Company"],
+        "occurrence_count": 1,
+        "attributes": ["partnership_type"]
+      },
+      "produces": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Product",
+          "Financial_Concept",
+          "Financial_Instrument"
+        ],
+        "occurrence_count": 1
+      },
+      "owns_stake_in": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Financial_Instrument"],
+        "occurrence_count": null,
+        "attributes": ["ownership_percentage", "paid_amount"]
+      }
+    }
+  },
+  "Organization": {
+    "description": "Non-commercial entities such as universities, unions, associations, NGOs, and federations that influence or participate in economic contexts.",
+    "attributes": [
+      "name",
+      "organization_type",
+      "founding_date",
+      "mission_statement",
+      "membership_count",
+      "revenue_sources",
+      "tax_status",
+      "website",
+      "scope",
+      "governance_model",
+      "accreditation_status",
+      "main_activities"
+    ],
+    "outgoing_relations": {
+      "employs": {
+        "cardinality": "1:n",
+        "target_types": ["Person"],
+        "occurrence_count": 26,
+        "attributes": ["role", "start_date", "end_date", "reason_for_leaving"]
+      },
+      "has_project": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 2,
+        "attributes": [
+          "project_type",
+          "amount",
+          "date_announced",
+          "completion_target",
+          "expected_jobs",
+          "scope"
+        ]
+      },
+      "publishes_metric": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Concept"],
+        "occurrence_count": 5
+      },
+      "located_in": {
+        "cardinality": "n:1",
+        "target_types": ["City", "Country", "Location", "Facility"],
+        "occurrence_count": 11
+      },
+      "partners_with": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Organization"],
+        "occurrence_count": 10,
+        "attributes": ["partnership_type"]
+      },
+      "has_members": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Person"],
+        "occurrence_count": 6
+      },
+      "headquartered_in": {
+        "cardinality": "n:1",
+        "target_types": ["City", "Country"],
+        "occurrence_count": 1
+      }
+    }
+  },
+  "Sector": {
+    "description": "An industry or economic domain consisting of companies producing similar goods or services, such as banking, technology, or steel.",
+    "attributes": [
+      "name",
+      "classification_code",
+      "total_market_size",
+      "growth_rate",
+      "employment_level",
+      "key_drivers",
+      "regulatory_intensity",
+      "barrier_to_entry"
+    ],
+    "outgoing_relations": {
+      "includes": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Product"],
+        "occurrence_count": 6
+      }
+    }
+  },
+  "Financial_Instrument": {
+    "description": "Assets traded in financial markets, such as stocks, bonds, currencies, commodities, ETFs, derivatives, cryptocurrencies, or investment funds (mutual funds, hedge funds, pension funds).",
+    "attributes": [
+      "name",
+      "isin",
+      "cusip",
+      "ticker_symbol",
+      "instrument_type",
+      "issue_date",
+      "maturity_date",
+      "face_value",
+      "coupon_rate",
+      "current_price",
+      "currency",
+      "liquidity_rating",
+      "risk_rating",
+      "yield",
+      "total_supply",
+      "voting_rights",
+      "dividend_policy"
+    ],
+    "outgoing_relations": {
+      "listed_on": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Market"],
+        "occurrence_count": 5,
+        "attributes": [
+          "description",
+          "listing_start_date",
+          "offering_date",
+          "listing_end_date",
+          "initial_listing_volume"
+        ]
+      }
+    }
+  },
+  "Financial_Market": {
+    "description": "The environment, mechanism, or platform where financial instruments are traded, including stock exchanges, forex markets, or over-the-counter systems.",
+    "attributes": [
+      "name",
+      "market_type",
+      "establishment_date",
+      "trading_hours",
+      "time_zone",
+      "settlement_period",
+      "market_cap",
+      "average_daily_volume",
+      "number_of_listings",
+      "trading_mechanism",
+      "access_requirements"
+    ],
+    "outgoing_relations": {
+      "located_in": {
+        "cardinality": "n:1",
+        "target_types": ["City", "Country"],
+        "occurrence_count": 1
+      },
+      "lists": {
+        "cardinality": "1:n",
+        "target_types": ["Financial_Instrument", "Company"],
+        "occurrence_count": 3
+      },
+      "merge_action_with": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Market"],
+        "occurrence_count": 1,
+        "attributes": ["description", "status"]
+      },
+      "uses_currency": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Instrument"],
+        "occurrence_count": 1
+      }
+    }
+  },
+  "Financial_Index": {
+    "description": "A statistical indicator representing the performance of a market or its segment, derived from the prices of selected financial instruments.",
+    "attributes": [
+      "name",
+      "index_code",
+      "base_value",
+      "base_date",
+      "number_of_constituents",
+      "index_type",
+      "currency"
+    ],
+    "outgoing_relations": {
+      "hosted_by": {
+        "cardinality": "m:n",
+        "target_types": ["Country", "Location"],
+        "occurrence_count": 12
+      },
+      "listed_on": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Market"],
+        "occurrence_count": 24
+      },
+      "includes": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Instrument", "Company"],
+        "occurrence_count": 4
+      },
+      "removes": {
+        "cardinality": "m:n",
+        "target_types": ["Company"],
+        "occurrence_count": 4
+      },
+      "adds": {
+        "cardinality": "m:n",
+        "target_types": ["Company"],
+        "occurrence_count": 9
+      }
+    }
+  },
+  "Financial_Concept": {
+    "description": "Abstract financial or economic ideas, metrics, theories, or policies, such as inflation, interest rates, GDP, quantitative easing, or accounting standards (GAAP, IFRS). It should be important concepts that change over long periods or are permanent, not temporary situations that change daily.",
+    "attributes": [
+      "name",
+      "definition",
+      "measurement_unit",
+      "concept_category",
+      "application_scope",
+      "type",
+      "scope",
+      "expected_jobs",
+      "date",
+      "time_period"
+    ],
+    "outgoing_relations": {
+      "located_in": {
+        "cardinality": "m:n",
+        "target_types": ["Country", "City", "Location"],
+        "occurrence_count": null
+      },
+      "related_to": {
+        "cardinality": "m:n",
+        "target_types": ["Financial_Concept"],
+        "occurrence_count": 3,
+        "attributes": ["description", "relationship_type"]
+      },
+      "is_party_to": {
+        "cardinality": "m:n",
+        "target_types": ["Company", "Person", "Institution", "Organization"],
+        "occurrence_count": null,
+        "attributes": ["description"]
+      },
+      "affects": {
+        "cardinality": "m:n",
+        "target_types": ["Sector"],
+        "occurrence_count": 3
+      },
+      "mentions": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Company",
+          "Person",
+          "Institution",
+          "Organization",
+          "Country",
+          "City",
+          "Location",
+          "Product",
+          "Facility",
+          "Financial_Instrument",
+          "Financial_Market",
+          "Financial_Index",
+          "Financial_Concept"
+        ],
+        "occurrence_count": 29,
+        "attributes": ["description"]
+      }
+    }
+  },
+  "Country": {
+    "description": "A sovereign geopolitical entity representing a nation-state, used to describe the location or jurisdiction of financial or institutional activities.",
+    "attributes": ["name", "capital_city", "currency_code"],
+    "outgoing_relations": {
+      "has_legal_issues_with": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Company",
+          "Person",
+          "Institution",
+          "Organization",
+          "Country"
+        ],
+        "occurrence_count": 7,
+        "attributes": ["description"]
+      },
+      "contains": {
+        "cardinality": "m:n",
+        "target_types": ["City", "Location", "Facility"],
+        "occurrence_count": 13
+      },
+      "central_bank": {
+        "cardinality": "m:n",
+        "target_types": ["Institution"],
+        "occurrence_count": 1
+      },
+      "invests_in": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Country",
+          "City",
+          "Location",
+          "Sector",
+          "Financial_Market",
+          "Financial_Concept"
+        ],
+        "occurrence_count": 5,
+        "attributes": [
+          "investment_amount",
+          "investment_date",
+          "investment_details",
+          "shares_purchased"
+        ]
+      },
+      "sanctions": {
+        "cardinality": "m:n",
+        "target_types": ["Sector", "Company"],
+        "occurrence_count": 3,
+        "attributes": ["description", "sanction_type"]
+      },
+      "co_presides": {
+        "cardinality": "m:n",
+        "target_types": ["Organization"],
+        "occurrence_count": 2
+      },
+      "member_of": {
+        "cardinality": "m:n",
+        "target_types": ["Organization", "Location", "Institution"],
+        "occurrence_count": 4
+      },
+      "minister": {
+        "cardinality": "m:n",
+        "target_types": ["Person"],
+        "occurrence_count": 5,
+        "attributes": ["ministry_name"]
+      },
+      "president": {
+        "cardinality": "m:n",
+        "target_types": ["Person"],
+        "occurrence_count": 12
+      },
+      "trades_with": {
+        "cardinality": "m:n",
+        "target_types": ["Country", "Organization", "Company", "Institution"],
+        "occurrence_count": 9
+      },
+      "produces": {
+        "cardinality": "m:n",
+        "target_types": ["Product", "Financial_Concept"],
+        "occurrence_count": 1
+      },
+      "prime_minister": {
+        "cardinality": "m:n",
+        "target_types": ["Person"],
+        "occurrence_count": 1
+      }
+    }
+  },
+  "City": {
+    "description": "An urban administrative unit representing a specific locality within a country, often used to denote headquarters or market locations.",
+    "attributes": [
+      "name",
+      "area_sq_km",
+      "time_zone",
+      "coordinates_latitude",
+      "coordinates_longitude",
+      "major_industries"
+    ],
+    "outgoing_relations": {
+      "contains": {
+        "cardinality": "m:n",
+        "target_types": ["Location"],
+        "occurrence_count": 31
+      },
+      "produces": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 4
+      }
+    }
+  },
+  "Location": {
+    "description": "Non-administrative geographic areas or regions that are not strictly countries or cities. Includes macro-regions (e.g., Europe, MENA, Asia-Pacific) and sub-city areas or industrial zones (e.g., Etiler District, Maslak Business Zone, Silicon Valley). Do not use for countries or cities.",
+    "attributes": ["name", "location_type", "area_sq_km", "primary_activities"],
+    "outgoing_relations": {
+      "contains": {
+        "cardinality": "m:n",
+        "target_types": [
+          "Country",
+          "City",
+          "Location",
+          "Facility",
+          "Financial_Market"
+        ],
+        "occurrence_count": 11
+      }
+    }
+  },
+  "Product": {
+    "description": "Tangible goods or services produced or offered by companies, including consumer products, financial services, and technology items.",
+    "attributes": [
+      "name",
+      "product_category",
+      "sku",
+      "brand_name",
+      "launch_date",
+      "product_lifecycle_stage",
+      "price_range",
+      "target_market",
+      "features",
+      "certifications",
+      "units_sold",
+      "market_share"
+    ],
+    "outgoing_relations": {
+      "uses": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 9
+      },
+      "component_of": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 3
+      },
+      "variant_of": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 1
+      },
+      "targets_sector": {
+        "cardinality": "m:n",
+        "target_types": ["Sector"],
+        "occurrence_count": null
+      }
+    }
+  },
+  "Facility": {
+    "description": "Physical or operational site such as a factory, branch, plant, data center, or office owned or operated by a company or institution.",
+    "attributes": [
+      "name",
+      "facility_type",
+      "opening_date",
+      "capacity",
+      "area",
+      "number_of_employees",
+      "operational_status",
+      "production_volume",
+      "energy_consumption",
+      "investment_amount",
+      "address"
+    ],
+    "outgoing_relations": {
+      "located_in": {
+        "cardinality": "n:1",
+        "target_types": ["City", "Country", "Location"],
+        "occurrence_count": 2
+      },
+      "provides_service": {
+        "cardinality": "m:n",
+        "target_types": ["Product"],
+        "occurrence_count": 4
+      }
+    }
+  }
+}

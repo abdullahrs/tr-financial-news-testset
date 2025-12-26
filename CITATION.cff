@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+title: "Turkish News Dataset with Entity Extraction"
+version: 1.0.0
+authors:
+  - given-names: "Your"
+    family-names: "Name"
+    affiliation: "Your Institution"
+date-released: 2025-01-01
+license: MIT
+repository-code: "https://github.com/yourusername/dataset"
+keywords:
+  - "Turkish"
+  - "News"
+  - "Entity Extraction"
+  - "Knowledge Graph"
+  - "NLP"
+abstract: "A dataset of Turkish news articles with extracted entities (Company, Person, Organization) and knowledge graph information."
+
