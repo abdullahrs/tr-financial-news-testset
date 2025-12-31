@@ -1,0 +1,1006 @@
+{
+  "should_matches": [
+    {
+      "entity1": {
+        "name": "enerji",
+        "type": "Sector"
+      },
+      "entity2": {
+        "name": "yenilenebilir enerji",
+        "type": "Sector"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Avrupa Birligi Komisyonu",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "AB Komisyonu",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Merkez Bankasi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "TCMB",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Turkiye Cumhuriyet Merkez Bankasi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "TCMB",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Hazine ve Maliye Bakanligi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Maliye Bakanligi",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Borsa Istanbul",
+        "type": "Financial_Market"
+      },
+      "entity2": {
+        "name": "BIST",
+        "type": "Financial_Market"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BIST 100",
+        "type": "Financial_Index"
+      },
+      "entity2": {
+        "name": "BIST100",
+        "type": "Financial_Index"
+      }
+    },
+    {
+      "entity1": {
+        "name": "S&P 500",
+        "type": "Financial_Index"
+      },
+      "entity2": {
+        "name": "SP500",
+        "type": "Financial_Index"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Nasdaq 100",
+        "type": "Financial_Index"
+      },
+      "entity2": {
+        "name": "NASDAQ100",
+        "type": "Financial_Index"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Dolar/TL",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "USD/TRY",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Euro/TL",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "EUR/TRY",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Altin",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "XAU",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Bitcoin",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "BTC",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Ethereum",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "ETH",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Brent petrol",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "Brent",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "enflasyon",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "inflation",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "faiz oranlari",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "interest rates",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "GDP",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "GSYH",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "IFRS",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "International Financial Reporting Standards",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "GAAP",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "Generally Accepted Accounting Principles",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "quantitative easing",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "parasal genisleme",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "ABD",
+        "type": "Country"
+      },
+      "entity2": {
+        "name": "Amerika Birlesik Devletleri",
+        "type": "Country"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Birlesik Krallik",
+        "type": "Country"
+      },
+      "entity2": {
+        "name": "UK",
+        "type": "Country"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Almanya",
+        "type": "Country"
+      },
+      "entity2": {
+        "name": "Germany",
+        "type": "Country"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Fransa",
+        "type": "Country"
+      },
+      "entity2": {
+        "name": "France",
+        "type": "Country"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Istanbul",
+        "type": "City"
+      },
+      "entity2": {
+        "name": "Ist.",
+        "type": "City"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Ankara",
+        "type": "City"
+      },
+      "entity2": {
+        "name": "Ankara ili",
+        "type": "City"
+      }
+    },
+    {
+      "entity1": {
+        "name": "New York",
+        "type": "City"
+      },
+      "entity2": {
+        "name": "NYC",
+        "type": "City"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Avrupa",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Europe",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "MENA",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Orta Dogu ve Kuzey Afrika",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Silicon Valley",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Silikon Vadisi",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Turkiye Is Bankasi",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Is Bankasi",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Turkiye Garanti Bankasi",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Garanti BBVA",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Turk Hava Yollari",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "THY",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Turkcell",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Turkcell Iletisim Hizmetleri A.S.",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "ASELSAN",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Aselsan Elektronik Sanayi ve Ticaret A.S.",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BIM",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "BIM Birlesik Magazalar",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "TUPRAS",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Turkiye Petrol Rafinerileri A.S.",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Koc Holding",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Koc Holding A.S.",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Sabanci Holding",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Haci Omer Sabanci Holding",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Dunya Bankasi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "World Bank",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "IMF",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "International Monetary Fund",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BDDK",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Bankacilik Duzenleme ve Denetleme Kurumu",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "SPK",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Sermaye Piyasasi Kurulu",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "TUIK",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Turkiye Istatistik Kurumu",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "OECD",
+        "type": "Organization"
+      },
+      "entity2": {
+        "name": "Organisation for Economic Co-operation and Development",
+        "type": "Organization"
+      }
+    },
+    {
+      "entity1": {
+        "name": "ODTU",
+        "type": "Organization"
+      },
+      "entity2": {
+        "name": "Orta Dogu Teknik Universitesi",
+        "type": "Organization"
+      }
+    },
+    {
+      "entity1": {
+        "name": "TOBB",
+        "type": "Organization"
+      },
+      "entity2": {
+        "name": "Turkiye Odalar ve Borsalar Birligi",
+        "type": "Organization"
+      }
+    },
+    {
+      "entity1": {
+        "name": "kredi karti",
+        "type": "Product"
+      },
+      "entity2": {
+        "name": "credit card",
+        "type": "Product"
+      }
+    },
+    {
+      "entity1": {
+        "name": "bireysel emeklilik",
+        "type": "Product"
+      },
+      "entity2": {
+        "name": "BES",
+        "type": "Product"
+      }
+    }
+  ],
+  "should_different": [
+    {
+      "entity1": {
+        "name": "Alipay",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Alibaba",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Norvec Varlik Fonu",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "Turkiye Varlik Fonu",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Norvec",
+        "type": "Country"
+      },
+      "entity2": {
+        "name": "Fransa",
+        "type": "Country"
+      }
+    },
+    {
+      "entity1": {
+        "name": "teknoloji",
+        "type": "Sector"
+      },
+      "entity2": {
+        "name": "tarim",
+        "type": "Sector"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Avrupa Merkez Bankasi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "ABD Merkez Bankasi",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "JPMorgan",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Goldman Sachs",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BIST 30",
+        "type": "Financial_Index"
+      },
+      "entity2": {
+        "name": "BIST 100",
+        "type": "Financial_Index"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Nasdaq",
+        "type": "Financial_Market"
+      },
+      "entity2": {
+        "name": "New York Stock Exchange",
+        "type": "Financial_Market"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Borsa Istanbul",
+        "type": "Financial_Market"
+      },
+      "entity2": {
+        "name": "Londra Borsasi",
+        "type": "Financial_Market"
+      }
+    },
+    {
+      "entity1": {
+        "name": "USD/TRY",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "EUR/TRY",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Brent",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "WTI",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BTC",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "ETH",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Altin",
+        "type": "Financial_Instrument"
+      },
+      "entity2": {
+        "name": "Gumus",
+        "type": "Financial_Instrument"
+      }
+    },
+    {
+      "entity1": {
+        "name": "enflasyon",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "issizlik",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "faiz artisi",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "faiz indirimi",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "IFRS",
+        "type": "Financial_Concept"
+      },
+      "entity2": {
+        "name": "GAAP",
+        "type": "Financial_Concept"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Merkez Bankasi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Ziraat Bankasi",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Hazine ve Maliye Bakanligi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Ticaret Bakanligi",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BDDK",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "SPK",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "TUIK",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "TCMB",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Turkcell",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Vodafone",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Turk Hava Yollari",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Pegasus",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "ASELSAN",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "ROKETSAN",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "TUPRAS",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "PETKIM",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BIM",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "A101",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Koc Holding",
+        "type": "Company"
+      },
+      "entity2": {
+        "name": "Sabanci Holding",
+        "type": "Company"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Mehmet Simsek",
+        "type": "Person"
+      },
+      "entity2": {
+        "name": "Murat Simsek",
+        "type": "Person"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Mehmet Simsek",
+        "type": "Person"
+      },
+      "entity2": {
+        "name": "Naci Agbal",
+        "type": "Person"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Naci Agbal",
+        "type": "Person"
+      },
+      "entity2": {
+        "name": "Hafize Gaye Erkan",
+        "type": "Person"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Elon Musk",
+        "type": "Person"
+      },
+      "entity2": {
+        "name": "Jeff Bezos",
+        "type": "Person"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Istanbul",
+        "type": "City"
+      },
+      "entity2": {
+        "name": "Izmir",
+        "type": "City"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Ankara",
+        "type": "City"
+      },
+      "entity2": {
+        "name": "Bursa",
+        "type": "City"
+      }
+    },
+    {
+      "entity1": {
+        "name": "New York",
+        "type": "City"
+      },
+      "entity2": {
+        "name": "London",
+        "type": "City"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Avrupa",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Asya",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "MENA",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Latin Amerika",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Silicon Valley",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Wall Street",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "TOBB",
+        "type": "Organization"
+      },
+      "entity2": {
+        "name": "TUSIAD",
+        "type": "Organization"
+      }
+    },
+    {
+      "entity1": {
+        "name": "ODTU",
+        "type": "Organization"
+      },
+      "entity2": {
+        "name": "Bogazici Universitesi",
+        "type": "Organization"
+      }
+    },
+    {
+      "entity1": {
+        "name": "OECD",
+        "type": "Organization"
+      },
+      "entity2": {
+        "name": "IMF",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Dunya Bankasi",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Asya Kalkinma Bankasi",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "IMF",
+        "type": "Institution"
+      },
+      "entity2": {
+        "name": "Avrupa Yatirim Bankasi",
+        "type": "Institution"
+      }
+    },
+    {
+      "entity1": {
+        "name": "kredi karti",
+        "type": "Product"
+      },
+      "entity2": {
+        "name": "ihtiyac kredisi",
+        "type": "Product"
+      }
+    },
+    {
+      "entity1": {
+        "name": "BES",
+        "type": "Product"
+      },
+      "entity2": {
+        "name": "kredi karti",
+        "type": "Product"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Konut kredisi",
+        "type": "Product"
+      },
+      "entity2": {
+        "name": "Tasarruf mevduati",
+        "type": "Product"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Istanbul Finans Merkezi",
+        "type": "Facility"
+      },
+      "entity2": {
+        "name": "Sabiha Gokcen Havalimani",
+        "type": "Facility"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Gebze Organize Sanayi Bolgesi",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Maslak",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Kocaeli",
+        "type": "City"
+      },
+      "entity2": {
+        "name": "Istanbul",
+        "type": "City"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Akdeniz Bolgesi",
+        "type": "Location"
+      },
+      "entity2": {
+        "name": "Ege Bolgesi",
+        "type": "Location"
+      }
+    },
+    {
+      "entity1": {
+        "name": "Borsa Istanbul Genel Mudurluk",
+        "type": "Facility"
+      },
+      "entity2": {
+        "name": "TCMB Ankara Merkez Bina",
+        "type": "Facility"
+      }
+    },
+    {
+      "entity1": {
+        "name": "S&P 500",
+        "type": "Financial_Index"
+      },
+      "entity2": {
+        "name": "Dow Jones",
+        "type": "Financial_Index"
+      }
+    }
+  ]
+}
