@@ -2,6 +2,8 @@
 
 Türkçe haber makalelerinden çıkarılmış varlıklar ve bilgi grafı bilgileri içeren bir veri seti.
 
+Bu repo yalnızca veri setini içerir. Haberlerden bilgi grafiği çıkaran tam uygulama (ajanlar, çıkarıcılar, Neo4j/Qdrant entegrasyonu, değerlendirme betikleri) ayrı bir repoda tutulmaktadır; kurulum, ortam değişkenleri ve çalıştırma adımları için bkz. [Turkish Financial News Knowledge Graph Extractor — README](https://github.com/abdullahrs/kg-construction-from-turkish-financial-news/blob/main/README.md).
+
 ## Veri Seti Yapısı
 
 - **`data/raw/`**: JSON formatında 200 ham haber makalesi
